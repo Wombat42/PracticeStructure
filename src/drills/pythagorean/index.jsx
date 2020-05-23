@@ -43,7 +43,7 @@ function findTriplet(array) {
     }
   }
   console.log("f", counter, innerCounter);
-  return ["No", counter + innerCounter];
+  return ["No combinations", counter + innerCounter];
 }
 
 export default function Pythagorean(props) {
@@ -60,7 +60,11 @@ export default function Pythagorean(props) {
     <>
       <Try label="Pythagorean" value={result} expectedValue="9 + 16 = 25" />
       <Try label="Pythagorean" value={result2} expectedValue="9 + 16 = 25" />
-      <Try label="Pythagorean" value={result3} expectedValue="No" />
+      <Try
+        label="Pythagorean"
+        value={result3}
+        expectedValue="No combinations"
+      />
     </>
   );
 }
