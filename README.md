@@ -1,2 +1,0 @@
-# PracticeStructure
-Created with CodeSandbox

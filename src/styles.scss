@@ -1,0 +1,35 @@
+.App {
+  font-family: "Roboto";
+  text-align: center;
+  .tests {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 20% auto  auto 200px;
+    grid-gap: 1rem;
+
+    .heading {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .label, .value, .expectedValue, .result {
+      justify-self: start;
+    }
+    .label {
+      text-transform: 'capitalize';
+    }
+
+    .result {
+      font-weight: 900;
+      color: blue;
+    }
+    .success {
+      color:green;  
+    }
+    .failed {
+      color: tomato;
+    }
+}
+
+}
+
+
