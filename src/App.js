@@ -5,6 +5,8 @@ import KLargest from "./drills/klargest";
 import Pythagorean from "./drills/pythagorean";
 import BinaryTreeDLL from "./drills/binarytreetodll";
 import BinaryTreeLCA from "./drills/binarytreeLCA";
+import LinkListGroup from "./drills/linkedlistgroup";
+import RotateMatrix from "./drills/rotatematrix";
 
 export default function App() {
   return (
@@ -23,10 +25,12 @@ export default function App() {
           expectedValue="Expected Value"
           heading
         />
-        <KLargest />
-        <Pythagorean />
-        <BinaryTreeDLL />
+        <RotateMatrix />
+        <LinkListGroup />
         <BinaryTreeLCA />
+        <BinaryTreeDLL />
+        <Pythagorean />
+        <KLargest />
       </div>
     </div>
   );

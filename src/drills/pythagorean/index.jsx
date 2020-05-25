@@ -3,7 +3,6 @@ import Try from "../../components/try";
 
 function findTripletBad(array) {
   let counter = 0;
-  console.log("###############");
   for (let aI = 0; aI < array.length; aI++) {
     let a = Math.pow(array[aI], 2);
     for (let bI = 0; bI < array.length; bI++) {
@@ -11,7 +10,6 @@ function findTripletBad(array) {
       for (let cI = 0; cI < array.length; cI++) {
         counter++;
         let c = Math.pow(array[cI], 2);
-        console.log(a, b, c, a + b === c);
         if (a + b === c) return [`${a} + ${b} = ${c}`, counter];
       }
     }
@@ -30,7 +28,6 @@ function findTriplet(array) {
   });
   let innerCounter = 0;
   let values = Object.values(hash);
-  console.log("vals", values);
   for (let x = 0; x < values.length - 1; x++) {
     for (let y = x + 1; y < values.length - 1; y++) {
       innerCounter++;
@@ -42,7 +39,6 @@ function findTriplet(array) {
       }
     }
   }
-  console.log("f", counter, innerCounter);
   return ["No combinations", counter + innerCounter];
 }
 
@@ -54,7 +50,6 @@ export default function Pythagorean(props) {
   const [result, counter] = findTriplet(testCase1);
   const [result2, counter2] = findTriplet(testCase2);
   const [result3, counter3] = findTriplet(testCase3);
-  console.log(counter, counter2, counter3);
 
   return (
     <>

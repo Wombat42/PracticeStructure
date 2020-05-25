@@ -14,9 +14,7 @@ function findLargest(array, k) {
       }
     }
   }
-  //console.log(result, counter);
   return [counter, result];
-  //return result.slice(0, k);
 }
 
 function arrayGen(length) {
@@ -31,7 +29,6 @@ export default function KLargest(props) {
   const testCase1 = [30, 44, 25, 12, 11, 5];
 
   const [counter, result] = findLargest(testCase1, 3);
-  console.log(result, counter);
   let test = JSON.stringify(result);
   let expected = JSON.stringify([44, 30, 25]);
 
