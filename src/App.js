@@ -9,6 +9,7 @@ import BinaryTreeLCA from "./drills/binarytreeLCA";
 import LinkListGroup from "./drills/linkedlistgroup";
 import RotateMatrix from "./drills/rotatematrix";
 import LinkList from "./drills/linklist";
+import NGram from "./drills/n-gram";
 
 const theme = {
   font: {
@@ -50,45 +51,6 @@ const Tests = styled.div`
   border-radius: 9px;
 `;
 
-const theme = {
-  font: {
-    fontFamily: "Roboto"
-  },
-  pallete: {
-    primary: "#63a2a3",
-    info: "#2b6c95",
-    success: "#66b774",
-    warning: "#e3a63c",
-    error: "#f44336",
-    background: "#fbf9fa",
-    constrastText: "#fbf9fa"
-  }
-};
-
-const AppContainer = styled.div`
-  color: ${props => props.theme.pallete.constrastText};
-  font-family: ${props => props.theme.font.fontFamily};
-  padding-top: 20px;
-  text-align: center;
-  margin: 0px 20px 0 20px;
-  a {
-    color: white;
-  }
-  p {
-    text-align: left;
-  }
-`;
-
-const Tests = styled.div`
-  background-color: ${props => props.theme.pallete.background};
-  text-align: left;
-  display: grid;
-  grid-template-columns: 20% auto auto auto;
-  grid-gap: 1rem;
-  padding: 20px;
-  box-shadow: 5px 5px 40px -5px rgba(0, 0, 0, 0.65);
-`;
-
 export default function App() {
   return (
     <ThemeProvider theme={theme}>
@@ -98,7 +60,9 @@ export default function App() {
           Each of the drills runs a different question from{" "}
           <a href="https://www.geeksforgeeks.org/amazon-interview-questions/">
             https://www.geeksforgeeks.org/amazon-interview-questions/
-          </a>
+          </a>{" "}
+          but then I started working on some other stuff. So this is my
+          plaground...
         </p>
         <Tests>
           <Heading
@@ -107,6 +71,7 @@ export default function App() {
             expectedValue="Expected Value"
             result="Result"
           />
+          <NGram />
           <LinkList />
           <RotateMatrix />
           <LinkListGroup />
